@@ -48,7 +48,6 @@ const contentList = reactive([
     </div>
 
     <div class="demo-main">
-      <van-cell v-for="(item, idx) in contentList" :key="idx" :title="item" />
     </div>
   </div>
 </template>

@@ -6,13 +6,12 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "root",
-    component: Layout,
     redirect: { name: "Demo" },
     children: [
       {
-        path: "demo",
-        name: "Demo",
-        component: Demo,
+        path: "home",
+        name: "Home",
+        component: () => import("@/views/home/index.vue"),
         meta: {
           title: "主页"
         }
